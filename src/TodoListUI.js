@@ -8,7 +8,7 @@ const TodoListUI=(props)=>{
             <Button type="primary" onClick={props.handleBtnClick}>提交</Button>
             </div>
             <List dataSource={props.list}
-                renderItem={(item,index)=>(<List.Item onClick={(index)=>{props.handleItemDelete(index)}}>{item}</List.Item>)}/>
+                renderItem={(item,index)=>(<List.Item onClick={()=>{props.handleItemDelete(index)}}>{item}</List.Item>)}/>
        </div>
     )
 }
